@@ -170,10 +170,10 @@ footer{
 }
 
 
-/* Footer principal */
+
 .footer {
-    background-color: #222; /* Couleur de fond sombre */
-    color: #fff; /* Texte blanc */
+    background-color: #222; 
+    color: #fff; 
     padding: 20px 10px;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -186,28 +186,25 @@ footer{
     gap: 10px;
 }
 
-/* Titre du footer */
 .footer-title h3 {
     font-size: 1.5rem;
-    color: #ddaf34; /* Couleur dorée */
+    color: #ddaf34; 
     margin: 0;
 }
 
-/* Icônes des réseaux sociaux */
 .social-media-icons a {
     text-decoration: none;
-    color: #ddaf34; /* Couleur des icônes */
+    color: #ddaf34; 
     font-size: 1.3rem;
     margin: 0 10px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-media-icons a:hover {
-    color: #fff; /* Changement de couleur au survol */
-    transform: scale(1.2); /* Effet de zoom */
+    color: #fff; 
+    transform: scale(1.2); 
 }
 
-/* Copyright */
 .footer-copyright p {
     font-size: 0.8rem;
     color: #aaa;
