@@ -271,9 +271,16 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid ;
+}
+#cart-items {
+    color: black;
 }
 
+
+.cart-sidebar h2 {
+color: black;
+}
 .cart-item h3 {
     font-size: 16px;
     margin: 0;
@@ -291,7 +298,7 @@ footer{
 
 .cart-item-buttons button {
     background-color: #333;
-    color: #fff;
+    color:#fff;
     border: none;
     padding: 5px 10px;
     margin: 0 5px;
