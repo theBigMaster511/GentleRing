@@ -3,63 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GentleRING</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="Black_and_White_Men_s_Clothing_Logo-removebg-preview.png" alt="">
+            <img src="Black_and_White_Men_s_Clothing_Logo-removebg-preview.png" alt="GentleRING Logo">
         </div>
         <div class="menu-section">
             <li><a href="Index.html">Accueil</a></li>
-            <li><a href="index2.html">infiniteJagar</a></li>
+            <li><a href="index2.html">InfiniteJagar</a></li>
             <li><a href="index3.html">GoldenMen</a></li>
             <li><a href="index4.html">Bracelet</a></li>
         </div>
         <div class="Panier-section">
             <i class="fa-solid fa-shop"></i>
-            <div class="Panier-counter">3</div>
+            <div class="Panier-counter" id="cart-counter">0</div>
         </div>
     </header>
 
     <main class="produits-grid">
-        <div class="produit-card">
+        <div class="produit-card" data-id="1" data-name="Nature doré" data-price="3000">
             <img src="product1.jpg" alt="Produit 1">
-            <h2>Bague InfiniteJagar</h2>
-            <p>Élégance en acier inoxydable.</p>
+            <h2>Nature doré</h2>
+            <p>Bague Noir Finition dorée pour un style raffiné</p>
             <span class="prix">3000 Fcfa</span>
             <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
-        <div class="produit-card">
+        <div class="produit-card" data-id="2" data-name="Nature noir" data-price="3000">
             <img src="product2.jpg" alt="Produit 2">
-            <h2>Bague GoldenMen</h2>
-            <p>Finition dorée pour un style raffiné.</p>
-            <span class="prix">5000 Fcfa</span>
+            <h2>Nature noir</h2>
+            <p>Bague Noir excellent accessoire pour votre quotidien</p>
+            <span class="prix">3000 Fcfa</span>
             <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
-        <div class="produit-card">
+        <div class="produit-card" data-id="3" data-name="Rivière sauvage" data-price="3000">
             <img src="product3.jpg" alt="Produit 3">
-            <h2>Bague Unique</h2>
+            <h2>Rivière sauvage</h2>
             <p>Un design rare et authentique.</p>
-            <span class="prix">4500 Fcfa</span>
+            <span class="prix">3000 Fcfa</span>
             <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
+        <div class="produit-card" data-id="4" data-name="Polar savage" data-price="3000">
+            <img src="product4.jpg" alt="Produit 4">
+            <h2>Polar savage</h2>
+            <p>Un design rare et authentique</p>
+            <span class="prix">3000 Fcfa</span>
+            <button class="buy-now-btn">Ajouter au Panier</button>
+        </div>
+        <div id="cart-sidebar" class="cart-sidebar">
+            <h2>Votre Panier</h2>
+            <div id="cart-items"></div>
+            <button id="close-cart" class="close-cart-btn">Fermer</button>
+        </div>
+        
     </main>
-
-    
-
 
     <footer class="footer">
         <div class="footer-container">
-     
             <div class="footer-title">
                 <h3>GentleRING</h3>
             </div>
-       
             <div class="social-media-icons">
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i> Mygentle_Ring
@@ -68,12 +74,11 @@
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
             </div>
-           
             <div class="footer-copyright">
                 <p>&copy; 2024 GentleRING. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
-
+    <script src="index.js"></script>
 </body>
 </html>

@@ -10,62 +10,62 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="Black_and_White_Men_s_Clothing_Logo-removebg-preview.png" alt="">
+            <img src="Black_and_White_Men_s_Clothing_Logo-removebg-preview.png" alt="GentleRING Logo">
         </div>
         <div class="menu-section">
             <li><a href="Index.html">Accueil</a></li>
-            <li><a href="index2.html">infiniteJagar</a></li>
+            <li><a href="index2.html">InfiniteJagar</a></li>
             <li><a href="index3.html">GoldenMen</a></li>
             <li><a href="index4.html">Bracelet</a></li>
         </div>
         <div class="Panier-section">
             <i class="fa-solid fa-shop"></i>
-            <div class="Panier-counter">3</div>
+            <div class="Panier-counter" id="cart-counter">0</div>
         </div>
     </header>
 
     <main class="produits-grid">
-        <div class="produit-card">
-            <img src="product1.jpg" alt="Produit 1">
+        <div class="produit-card" data-id="1" data-name="Nature doré" data-price="3000">
+            <img src="WhatsApp Image 2025-01-05 at 17.04.27.jpeg" alt="Produit 1">
             <h2>Nature doré</h2>
-            <p>Bague Noir Finition dorée pour un style raffiné </p>
+            <p>Bague Noir Finition dorée pour un style raffiné</p>
             <span class="prix">3000 Fcfa</span>
             <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
-        <div class="produit-card">
-            <img src="product2.jpg" alt="Produit 2">
+        <div class="produit-card" data-id="2" data-name="Nature noir" data-price="3000">
+            <img src="WhatsApp Image 2025-01-05 at 22.01.49.jpeg" alt="Produit 2">
             <h2>Nature noir</h2>
-            <p> Bague Noir excellent accessoire pour votre quotidien </p>
+            <p>Bague Noir excellent accessoire pour votre quotidien</p>
             <span class="prix">3000 Fcfa</span>
             <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
-        <div class="produit-card">
-            <img src="product3.jpg" alt="Produit 3">
-            <h2>Riviére sauvage</h2>
+        <div class="produit-card" data-id="3" data-name="Rivière sauvage" data-price="3000">
+            <img src="WhatsApp Image 2025-01-05 at 22.07.12.jpeg" alt="Produit 3">
+            <h2>Rivière sauvage</h2>
             <p>Un design rare et authentique.</p>
             <span class="prix">3000 Fcfa</span>
-            <button class="buy-now-btn" >Ajouter au Panier</button>
+            <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
-         
-        <div class="produit-card">
-            <img src="product3.jpg" alt="Produit 3">
+        <div class="produit-card" data-id="4" data-name="Polar savage" data-price="3000">
+            <img src="WhatsApp Image 2025-01-06 at 21.22.31.jpeg" alt="Produit 4">
             <h2>Polar savage</h2>
             <p>Un design rare et authentique</p>
             <span class="prix">3000 Fcfa</span>
-            <button class="buy-now-btn" >Ajouter au Panier</button>
+            <button class="buy-now-btn">Ajouter au Panier</button>
         </div>
-
+        <div id="cart-sidebar" class="cart-sidebar">
+            <h2>Votre Panier</h2>
+            <div id="cart-items"></div>
+            <button id="close-cart" class="close-cart-btn">Fermer</button>
+        </div>
         
     </main>
 
-   
     <footer class="footer">
         <div class="footer-container">
-     
             <div class="footer-title">
                 <h3>GentleRING</h3>
             </div>
-       
             <div class="social-media-icons">
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i> Mygentle_Ring
@@ -74,11 +74,11 @@
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
             </div>
-           
             <div class="footer-copyright">
                 <p>&copy; 2024 GentleRING. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
